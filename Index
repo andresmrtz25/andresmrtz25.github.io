@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Andres Martinez | Portfolio</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #212529;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    /* Dark Red Theme */
+    .bg-dark-red {
+      background-color: #7A0019;
+    }
+
+    .text-dark-red {
+      color: #7A0019;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #7A0019;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: white;
+    }
+
+    .navbar .nav-link {
+      color: white;
+    }
+
+    .navbar .nav-link:hover {
+      color: #e6e6e6;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #7A0019;
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero h1,
+    .hero h2,
+    .hero p {
+      color: white;
+    }
+
+    /* Section Headings */
+    section h2 {
+      color: #7A0019;
+      font-weight: bold;
+    }
+
+    /* Cards */
+    .card {
+      background-color: white;
+      border: 1px solid #dddddd;
+    }
+
+    .project-card {
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      color: #7A0019;
+    }
+
+    /* Dark Red Buttons */
+    .btn-dark-red {
+      background-color: #7A0019;
+      color: white;
+      border: 1px solid #7A0019;
+    }
+
+    .btn-dark-red:hover {
+      background-color: #5c0013;
+      color: white;
+    }
+
+    /* Outline Buttons */
+    .btn-outline-dark-red {
+      color: #7A0019;
+      border: 1px solid #7A0019;
+    }
+
+    .btn-outline-dark-red:hover {
+      background-color: #7A0019;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #7A0019;
+      color: white;
+      padding: 20px 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 20px;
+      }
+
+      section {
+        padding: 45px 20px;
+      }
+
+      .contact-buttons a {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        Andres Martinez
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">
+              Skills
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">
+              Projects
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">
+              Resume
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+
+    <div class="container">
+
+      <h1 class="display-4 fw-bold">
+        Andres Martinez
+      </h1>
+
+      <h2 class="h4 mt-3">
+        Accounting & Business Analytics Student
+      </h2>
+
+      <p class="lead mt-3">
+        Data Analysis | Process Improvement | Business Decision-Making
+      </p>
+
+      <a
+        href="#projects"
+        class="btn btn-light mt-3"
+      >
+        View My Projects
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- About Me -->
+  <section id="about">
+
+    <div class="container">
+
+      <h2 class="mb-4">
+        About Me
+      </h2>
+
+      <p>
+        I’m an Accounting student at the University of Utah and a Human
+        Resources Partner at Amazon with a strong interest in data analysis,
+        process improvement, and business decision-making. I enjoy using
+        technology and data to solve practical problems, improve processes,
+        and turn information into meaningful insights.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills">
+
+    <div class="container">
+
+      <h2 class="mb-4">
+        Skills
+      </h2>
+
+      <div class="row g-4">
+
+
+        <!-- Excel -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+              <i class="bi bi-file-earmark-spreadsheet fs-2"></i>
+
+              <h5 class="mt-3">
+                Microsoft Excel
+              </h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Data Analytics -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+              <i class="bi bi-bar-chart fs-2"></i>
+
+              <h5 class="mt-3">
+                Data Analytics
+              </h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Prompt Engineering -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+              <i class="bi bi-robot fs-2"></i>
+
+              <h5 class="mt-3">
+                AI Prompt Engineering
+              </h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+
+    <div class="container">
+
+      <h2 class="mb-4">
+        Projects
+      </h2>
+
+      <div class="row g-4">
+
+
+        <!-- Project 1 -->
+        <div class="col-md-6">
+
+          <div class="card project-card h-100 shadow-sm">
+
+            <div class="card-body">
+
+              <i class="bi bi-robot fs-2"></i>
+
+              <h4 class="card-title mt-3">
+                AI Business Analysis
+              </h4>
+
+              <p class="card-text">
+                Analyze business data using ChatGPT to identify trends,
+                insights, and opportunities for improved decision-making.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-outline-dark-red"
+              >
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="col-md-6">
+
+          <div class="card project-card h-100 shadow-sm">
+
+            <div class="card-body">
+
+              <i class="bi bi-bar-chart-line fs-2"></i>
+
+              <h4 class="card-title mt-3">
+                Data Visualization
+              </h4>
+
+              <p class="card-text">
+                Interactive business dashboard built using Tableau to
+                communicate trends and support data-driven decisions.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-outline-dark-red"
+              >
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="col-md-6">
+
+          <div class="card project-card h-100 shadow-sm">
+
+            <div class="card-body">
+
+              <i class="bi bi-code-slash fs-2"></i>
+
+              <h4 class="card-title mt-3">
+                Web Development
+              </h4>
+
+              <p class="card-text">
+                Responsive portfolio website developed using HTML,
+                CSS, Bootstrap, and GitHub Pages.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-outline-dark-red"
+              >
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Project 4 -->
+        <div class="col-md-6">
+
+          <div class="card project-card h-100 shadow-sm">
+
+            <div class="card-body">
+
+              <i class="bi bi-gear fs-2"></i>
+
+              <h4 class="card-title mt-3">
+                Process Improvement
+              </h4>
+
+              <p class="card-text">
+                AI-assisted business workflow redesign focused on improving
+                efficiency and reducing unnecessary process steps.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-outline-dark-red"
+              >
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Resume -->
+  <section id="resume">
+
+    <div class="container">
+
+      <h2 class="mb-4">
+        Resume
+      </h2>
+
+      <p>
+        My professional experience combines human resources, process
+        improvement, data analysis, and operational decision-making.
+      </p>
+
+      <p>
+        Resume coming soon.
+      </p>
+
+      <a
+        href="#"
+        class="btn btn-dark-red"
+      >
+        <i class="bi bi-file-earmark-person"></i>
+        View Resume
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+
+    <div class="container text-center">
+
+      <h2>
+        Contact
+      </h2>
+
+      <p class="mt-3">
+        Feel free to connect with me.
+      </p>
+
+      <div class="mt-4 contact-buttons">
+
+        <a
+          href="mailto:u1419292@utah.edu"
+          class="btn btn-outline-dark-red me-md-2"
+        >
+          <i class="bi bi-envelope"></i>
+          Email
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/andresmrtz25"
+          target="_blank"
+          class="btn btn-outline-dark-red me-md-2"
+        >
+          <i class="bi bi-linkedin"></i>
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+          class="btn btn-outline-dark-red"
+        >
+          <i class="bi bi-github"></i>
+          GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+
+    <div class="container">
+
+      <p class="mb-0">
+        © 2026 Andres Martinez
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+
+</html>
